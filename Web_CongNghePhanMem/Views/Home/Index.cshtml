@@ -1,0 +1,78 @@
+@{
+    ViewData["Title"] = "System Overview";
+}
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card p-4">
+            <h6 class="text-muted text-uppercase mb-2" style="font-size: 0.8rem; font-weight: 600;">Total Assets</h6>
+            <h2 class="mb-0 fw-bold">1,248</h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-4">
+            <h6 class="text-muted text-uppercase mb-2" style="font-size: 0.8rem; font-weight: 600;">Needs Maintenance</h6>
+            <h2 class="mb-0 fw-bold">14</h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-4">
+            <h6 class="text-muted text-uppercase mb-2" style="font-size: 0.8rem; font-weight: 600;">New This Month</h6>
+            <h2 class="mb-0 fw-bold">+42</h2>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="card p-4 h-100">
+            <h5 class="fw-bold mb-4">Assets by Branch</h5>
+            <div class="d-flex align-items-end justify-content-around mt-3" style="height: 200px;">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="rounded-top" style="width: 40px; height: 160px; background-color: #5c5ff6;"></div>
+                    <span class="mt-2 text-muted" style="font-size: 0.8rem;">Center 1</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <div class="rounded-top" style="width: 40px; height: 110px; background-color: #828df8;"></div>
+                    <span class="mt-2 text-muted" style="font-size: 0.8rem;">Center 2</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <div class="rounded-top" style="width: 40px; height: 60px; background-color: #a5b4fc;"></div>
+                    <span class="mt-2 text-muted" style="font-size: 0.8rem;">Center 3</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <div class="rounded-top" style="width: 40px; height: 140px; background-color: #c7d2fe;"></div>
+                    <span class="mt-2 text-muted" style="font-size: 0.8rem;">Center 4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="card p-4 h-100">
+            <h5 class="fw-bold mb-4">Recent Activities</h5>
+            <ul class="list-unstyled mb-0 position-relative">
+                <li class="mb-4 d-flex align-items-start">
+                    <div class="rounded-circle bg-success mt-1 me-3" style="width: 10px; height: 10px; flex-shrink: 0;"></div>
+                    <div>
+                        <p class="mb-0 fw-medium" style="font-size: 0.95rem;">Added 5 new Laptops</p>
+                        <small class="text-muted">By Admin • 2 hours ago</small>
+                    </div>
+                </li>
+                <li class="mb-4 d-flex align-items-start">
+                    <div class="rounded-circle bg-warning mt-1 me-3" style="width: 10px; height: 10px; flex-shrink: 0;"></div>
+                    <div>
+                        <p class="mb-0 fw-medium" style="font-size: 0.95rem;">Projector #102 sent for repair</p>
+                        <small class="text-muted">By Teacher John • 5 hours ago</small>
+                    </div>
+                </li>
+                <li class="d-flex align-items-start">
+                    <div class="rounded-circle bg-primary mt-1 me-3" style="width: 10px; height: 10px; flex-shrink: 0;"></div>
+                    <div>
+                        <p class="mb-0 fw-medium" style="font-size: 0.95rem;">Quarterly report generated</p>
+                        <small class="text-muted">By Manager • 1 day ago</small>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+@{
+    ViewData["Title"] = "Generate Reports";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="card p-5">
+            <h5 class="fw-bold mb-4">Asset Inventory Report</h5>
+            
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">From Date</label>
+                    <input type="date" class="form-control text-muted">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">To Date</label>
+                    <input type="date" class="form-control text-muted">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">Category</label>
+                    <select class="form-select text-muted">
+                        <option selected>All Categories</option>
+                        <option value="1">Electronics</option>
+                        <option value="2">Furniture</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted" style="font-size: 0.85rem; font-weight: 500;">Branch Location</label>
+                    <select class="form-select text-muted">
+                        <option selected>All Branches</option>
+                        <option value="1">Center 1</option>
+                        <option value="2">Center 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <label class="form-label text-muted mb-2" style="font-size: 0.85rem; font-weight: 500;">Include Details</label>
+                <div class="d-flex gap-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="assetCost" checked>
+                        <label class="form-check-label text-muted" for="assetCost" style="font-size: 0.9rem;">
+                            Asset Cost
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="maintenanceHistory" checked>
+                        <label class="form-check-label text-muted" for="maintenanceHistory" style="font-size: 0.9rem;">
+                            Maintenance History
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-4 text-muted border-top border-2">
+
+            <div class="d-flex gap-3">
+                <button class="btn btn-primary flex-grow-1 py-2 fw-medium" style="background-color: #4b4efc; border-color: #4b4efc;">
+                    <i class="bi bi-file-earmark-pdf me-2"></i> Download PDF
+                </button>
+                <button class="btn btn-success flex-grow-1 py-2 fw-medium">
+                    <i class="bi bi-file-earmark-excel me-2"></i> Export to Excel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
